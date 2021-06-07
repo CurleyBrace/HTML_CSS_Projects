@@ -1,0 +1,130 @@
+.navBar{
+    overflow: hidden;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+navBar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBar a:hover {
+    background:black;
+    color:white;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+
+img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    filter: invert(70%);
+    border-radius: 50px 20px;
+}
+
+.imgText {
+    position:absolute;
+    font-size:large;
+    font-weight: 900;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+table, th, td {
+    border: 3px dotted darkblue;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align:center;
+}
+
+th  {
+    background-color:aqua;
+}
+ 
+.column1,
+.column2 {
+    float: left;
+    width: 50%;
+    color:darkblue;
+    height:250px;
+}
+
+.column1 {
+    background-color: lightblue;
+}
+
+.column2 {
+    background-color: lightgreen;
+}
+
+.fadeImage {
+    position:relative;
+    height:100px;
+    width: 100px;
+    cursor:pointer;
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.newImage {
+    position:relative;
+    margin-top: -100px;
+    height: 100px;
+    width: 100px;
+    opacity:0;
+    transition: 1s ease;
+}
+
+.fadeContainer:hover .fadeImage {
+    opacity: 0;
+}
+
+.fadeContainer:hover .newImage {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p:hover {
+    background-color:blue;
+    color: white;
+}
+
+.videoOverlay {
+    position:relative;
+    text-align: center;
+    color: white;
+}
+
+.centerVideoText{
+    position:absolute;
+    left:50%;
+    top:50%;
+    font-size:x-large;
+}
+
+footer{
+    text-align:center;
+    font-weight: bold;
+}

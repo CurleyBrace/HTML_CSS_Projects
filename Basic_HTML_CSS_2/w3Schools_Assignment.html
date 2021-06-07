@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML Template</title>
+        <link rel="stylesheet" href="./css/w3Schools_Assignment.css">
+        <script>
+            function allowDrop(ev) {
+              ev.preventDefault();
+            }
+            
+            function drag(ev) {
+              ev.dataTransfer.setData("text", ev.target.id);
+            }
+            
+            function drop(ev) {
+              ev.preventDefault();
+              var data = ev.dataTransfer.getData("text");
+              ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    </head>
+    <body>
+
+        <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="drag1" src="./img/key.png" draggable="true" ondragstart="drag(event)" width="200" height="100">
+        </div>
+            
+        <div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <span><img src="./img/lock.jpg" name="open-lock" ondrop="this.src = './img/openLock.png'"/></span>
+
+            <div class="div2-content">
+                <p>You've opened the lock!</p>
+            </div>
+
+        </div>    
+
+    </body>
+</html>

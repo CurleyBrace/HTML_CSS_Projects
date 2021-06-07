@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--HEAD-->
+    <head>
+        <meta charset="utf-8">
+        <title>Thomas Curley</title>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    </head>
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NavBar-->
+        <div class="navBar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gitHub">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!--BREAKS BETWEEN NAVBAR AND HEADING-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="home">
+            <video autoplay muted loop id="portfolioVideo">
+                <source src="img/video/portVideo.mp4" type="video/mp4">
+                <!--DISPLAY IF VIDEO FAILS-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="videoText">
+            <h1 class="whiteText">Thomas Curley's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Remember that code is really the language in which we ultimately express the requirements.
+                        <br> We may create languages that are closer to the requirements. We may create tools that help us parse and assemble those requirements 
+                        <br> into formal structures. But we will never eliminate necessary precision—so there will always be code.
+                    </q>
+                    <br> - Robert C. Martin
+                    <br>
+                    <br> My name is Thomas Curley. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div class="row" id="about">
+            <!--LEFT COLUMN-->
+            <div class="columnTwo">
+                <img src="img/compScreen.jpg" alt="Stock image of Computer Screen">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="columnOne">
+                <h1>About</h1>
+                <p>
+                    I am a computer enthusiast who enjoys everything ranging from coding to building my own computers.
+                    <br>
+                    <br>I am a soon-to-be graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Acadmy</a>'s C# and .Net Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+                    <br>I have been studying and learning about computers for over a decade now! If you're interested, <a href="#contact">Contact me</a> below!
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB-->
+        <div class="row" id="gitHub">
+            <!--LEFT COLUMN-->
+            <div class="columnOne">
+                <h1>GitHub</h1>
+                <div class="gitHubCard">
+                    <iframe id="ghcard-CurleyT-3" frameborder="0" scrolling="0" allowtransparency="true" 
+                    src="cards/default.html?user=CurleyT&amp;identity=ghcard-CurleyT-3&amp;client_id=a11a1bda412d928fb39a&amp;
+                    client_secret=92b7cf30bc42c49d589a10372c3f9ff3bb310037" width="400" height="250"></iframe>
+                </div>
+            </div>
+        </div>
+        <!--RIGHT COLUMN-->
+        <div class="columnTwo">
+            <a href="https://github.com/CurleyT" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo"></a>
+        </div>
+
+        <!--CONTACT-->
+        <div class="row" id="contact">
+            <!--CONTACT IMAGE, LEFT COLUMN-->
+            <div class="columnTwo columnTall">
+                <img src="img/contactImage.jpg" alt="Contact_Image">
+            </div>
+            <!--CONTACT FORM, RIGHT COLUMN-->
+            <div class="columnOne columnTall">
+                <h1>Contact</h1>
+                <!--SPECIFICS WHERE AND HOW TO SEND FORM DATA-->
+                <form action="https://formspree.io/f/mzbyrqla" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">&copy Curley Tech Inc., <a href="https://www.linkedin.com/in/thomas-curley-788188210/ target="_blank">Thomas Curley's LinkedIn</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
