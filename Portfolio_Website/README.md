@@ -1,2 +1,6 @@
 # Portfolio_Website
- Portfolio Website with examples of all of the projects I've completed thus-far.
+
+## This website shows several things to help act as a portfolio
+### - Concepts regarding Web Development
+### - Github Links and Badges
+### - LinkedIn Links
