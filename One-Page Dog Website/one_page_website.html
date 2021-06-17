@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Burt's Adoption Agency</title>
 		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="./js/main.js"></script>
 	</head>
 	<body>
 	
@@ -35,114 +36,135 @@
 			<div id="gallery">
 				<h1>Photos</h1>
 				<div>
-				
-					<!-- Photo Container 1 -->
-					<div>
-						<div>
-							<img src="./img/thumb/thumbnail_1.jpg" alt="Doggy 1" width="300" height="350">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have several doggos available daily, book your adoption with us today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- End of Photo Container 1 -->
 					
-					<!-- Photo Container 2 -->
-					<div>
-						<div>
-						<img src="./img/thumb/thumbnail_2.jpg" alt="Doggy 2" width="300" height="350">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have several doggos available daily, book your adoption with us today!</p>
+					<!--Large Image photos-->
+					<div class="row">
+						<div class="column">
+							<img src="img/thumb/thumbnail_1.jpg" style ="width:100%" onclick="openBox();currentSlide(1)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="img/thumb/thumbnail_2.jpg" style ="width:100%" onclick="openBox();currentSlide(2)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="img/thumb/thumbnail_3.jpg" style ="width:100%" onclick="openBox();currentSlide(3)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="img/thumb/thumbnail_4.jpg" style ="width:100%" onclick="openBox();currentSlide(4)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="img/thumb/thumbnail_5.jpg" style ="width:100%" onclick="openBox();currentSlide(5)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="img/thumb/thumbnail_6.jpg" style ="width:100%" onclick="openBox();currentSlide(6)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="img/thumb/thumbnail_7.jpg" style ="width:100%" onclick="openBox();currentSlide(7)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="img/thumb/thumbnail_8.jpg" style ="width:100%" onclick="openBox();currentSlide(8)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="img/thumb/thumbnail_9.jpeg" style ="width:100%" onclick="openBox();currentSlide(9)" class="hover-shadow cursor">
+						</div>
+					</div>
+
+					<div id="myLightBox" class="lightBox">
+						<span class="close cursor" onclick="closeBox()">&times;</span>
+						<div class="lightbox-content">
+
+							<!--Small Images underneath Gallery-->
+							<div class="mySlides">
+								<div class="numbertext">1 / 9</div>
+								<img src="img/thumb/wide1.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 9</div>
+								<img src="img/thumb/wide2.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3 / 9</div>
+								<img src="img/thumb/wide3.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">4 / 9</div>
+								<img src="img/thumb/wide4.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">5 / 9</div>
+								<img src="img/thumb/wide5.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">6 / 9</div>
+								<img src="img/thumb/wide6.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">7 / 9</div>
+								<img src="img/thumb/wide7.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">8 / 9</div>
+								<img src="img/thumb/wide8.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">9 / 9</div>
+								<img src="img/thumb/wide9.jpg" style="width:100%">
+							</div>
+
+							<!--Next and Prev Controls-->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<!--Caption Text for images-->
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<!--Thumbnail image controls-->
+							<div class="column">
+								<img class="demo" style="width:100%" src="img/thumb/thumbnail_1.jpg" onclick="currentSlide(1)" alt="Spot">
+							</div>
+
+							<div class="column">
+								<img class="demo" style="width:100%" src="img/thumb/thumbnail_2.jpg" onclick="currentSlide(2)" alt="Sasha">
+							</div>
+
+							<div class="column">
+								<img class="demo" style="width:100%" src="img/thumb/thumbnail_3.jpg" onclick="currentSlide(3)" alt="Roger">
+							</div>
+
+							<div class="column">
+								<img class="demo" style="width:100%" src="img/thumb/thumbnail_4.jpg" onclick="currentSlide(4)" alt="Savannah">
+							</div>
+
+							<div class="column">
+								<img class="demo" style="width:100%" src="img/thumb/thumbnail_5.jpg" onclick="currentSlide(5)" alt="Gizmo">
+							</div>
+
+							<div class="column">
+								<img class="demo" style="width:100%" src="img/thumb/thumbnail_6.jpg" onclick="currentSlide(6)" alt="Tanner">
+							</div>
+
+							<div class="column">
+								<img class="demo" style="width:100%" src="img/thumb/thumbnail_7.jpg" onclick="currentSlide(7)" alt="Index">
+							</div>
+
+							<div class="column">
+								<img class="demo" style="width:100%" src="img/thumb/thumbnail_8.jpg" onclick="currentSlide(8)" alt="Ruby">
+							</div>
+
+							<div class="column">
+								<img class="demo" style="width:100%" src="img/thumb/thumbnail_9.jpeg" onclick="currentSlide(9)" alt="Fiona">
 							</div>
 						</div>
 					</div>
-					<!-- End of Photo Container 2 -->
-					
-					<!-- Photo Container 3 -->
-					<div>
-						<div>
-						<img src="./img/thumb/thumbnail_3.jpg" alt="Doggy 3" width="300" height="350">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have several doggos available daily, book your adoption with us today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- End of Photo Container 3 -->
-					
-					<!-- Photo Container 4 -->
-					<div>
-						<div>
-						<img src="./img/thumb/thumbnail_4.jpg" alt="Doggy 4" width="300" height="350">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have several doggos available daily, book your adoption with us today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- End of Photo Container 4 -->
-					
-					<!-- Photo Container 5 -->
-					<div>
-						<div>
-						<img src="./img/thumb/thumbnail_5.jpg" alt="Doggy 5" width="300" height="350">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have several doggos available daily, book your adoption with us today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- End of Photo Container 5 -->
-					
-					<!-- Photo Container 6 -->
-					<div>
-						<div>
-						<img src="./img/thumb/thumbnail_6.jpg" alt="Doggy 6" width="300" height="350">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have several doggos available daily, book your adoption with us today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- End of Photo Container 6 -->
-					
-					<!-- Photo Container 7 -->
-					<div>
-						<div>
-						<img src="./img/thumb/thumbnail_7.jpg" alt="Doggy 7" width="300" height="350">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have several doggos available daily, book your adoption with us today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- End of Photo Container 7 -->
-					
-					<!-- Photo Container 8 -->
-					<div>
-						<div>
-						<img src="./img/thumb/thumbnail_8.jpg" alt="Doggy 8" width="300" height="350">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have several doggos available daily, book your adoption with us today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- End of Photo Container 8 -->
-					
-					<!-- Photo Container 9 -->
-					<div>
-						<div>
-						<img src="./img/thumb/thumbnail_9.jpeg" alt="Doggy 9" width="300" height="350">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have several doggos available daily, book your adoption with us today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- End of Photo Container 9 -->
 					
 				</div>
 			<div>
