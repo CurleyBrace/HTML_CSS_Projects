@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-
+      <!--Nav Bar Start-->
       <nav class="navbar navbar-expand-lg navbar-light bg-info">
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,19 +33,24 @@
             </form>
           </div>
       </nav>
+      <!--Nav Bar End-->
 
+      <!--Main Jumbotron Header Start-->
       <div class="jumbotron jumbotron-fluid bg-info text-center">
         <div class="container">
           <h1 class="display-4 text-light">Academy Cinemas</h1>
           <p class="lead text-light">Sit back, relax, and enjoy the show.</p>
         </div>
       </div>
+      <!--Main Jumbotron Header End-->
+
 
       <div class="container" id="about">
         <div class="row">
 
           <div class="col-sm">
 
+            <!--Added a Carousel for automated image scrolling on the homepage-->
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -67,9 +72,10 @@
                 <span class="sr-only"></span>
               </a>
             </div>
-
+            <!--End of Carousel-->
           </div>
 
+          <!--About Start-->
           <div class="col-sm">
             
             <h3>Accomodations:</h3>
@@ -79,7 +85,9 @@
             <p>Relax in our, extra-wide, plush cushioning recliners. Our seating arrangement is disability friendly &#9855;</p>
 
           </div>
+          <!--End of About-->
 
+          <!--Showtime summary-->
           <div class="col-sm" id="showtimes">
             
             <h3>Now Playing:</h3>
@@ -97,6 +105,7 @@
 
           </div>
         </div>
+        <!--End of showtime summary-->
       </div>
 
       <!-- showtimes -->
@@ -168,6 +177,7 @@
       </div>
       <!--/sign up for our deals-->
 
+      <!--Text form for entering email-->
       <div class="text-center" id="deals">
         <form>
           <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
@@ -179,6 +189,7 @@
           </button>
         </form>
       </div>
+      <!--End text form-->
 
       <!--form modal-->
       <!-- Modal -->
@@ -220,8 +231,9 @@
           </div>
         </div>
       </div>
-      <!--/form modal-->
+      <!--end of modal-->
 
+      <!--Footer-->
       <div class="container my-5">
         <ul class="nav nav-inline">
           <li class="nav-item">
@@ -240,8 +252,8 @@
             <small class="nav-link">&copy;2021 Academy Cinemas&reg;</small>
           </li>
         </ul>
-
       </div>
+      <!--End Footer-->
 
 
     </div>
@@ -261,6 +273,7 @@
     -->
   </body>
 
+  <!--JS Script for Popover email form-->
   <script>
     $('.popover-dismiss').popover({
       trigger: 'focus'
