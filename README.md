@@ -4,7 +4,7 @@ This is a folder comprised of projects that I've completed using HTML and CSS wh
 
 ## Projects Included
 
-### * [Burt's Adoption Agency](https://github.com/CurleyT/HTML_CSS_Projects/tree/main/Burts_Adoption_Web_Project)
+* ### [Burt's Adoption Agency](https://github.com/CurleyT/HTML_CSS_Projects/tree/main/Burts_Adoption_Web_Project)
    - This website gives an example of a home page for an adoption agency specializing in dogs. 
    - It contains, but is not limited to:
      - Navbar
@@ -12,7 +12,7 @@ This is a folder comprised of projects that I've completed using HTML and CSS wh
      - Forms
      - Transition Animations
      - CSS Styling
-### * [Academy Cinema's Website](https://github.com/CurleyT/HTML_CSS_Projects/tree/main/bootstrap4_project)
+* ### [Academy Cinema's Website](https://github.com/CurleyT/HTML_CSS_Projects/tree/main/bootstrap4_project)
    - This website is a home page for an Academy themed movie theatre using Bootstrap Components.
    - It contains, but is not limited to:
      - Navbar
@@ -21,7 +21,7 @@ This is a folder comprised of projects that I've completed using HTML and CSS wh
      - Cards
      - Badges
      - Dropdowns
-### * [Portfolio Website](https://github.com/CurleyT/HTML_CSS_Projects/tree/main/Portfolio_Website)
+* ### [Portfolio Website](https://github.com/CurleyT/HTML_CSS_Projects/tree/main/Portfolio_Website)
    - This website is a constant updating resume to display concepts and skills learned while going through the course offered by The Tech Academy.
    - It contains, but is not limited to:
      - Embeded Videos
